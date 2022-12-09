@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tudo bem autismo</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" width="50" height="50" alt="">
+            <h3 class="logo-titulo">Tudo Bem Autismo</h3>
+        </div>
+        <nav class="menu">
+            <ul class="submenu">
+                <a href="#triangulo-amarelo">Sobre o autismo</a>
+                <a href="#aplicativo">Aplicativo</a>
+                <a href="#sobre-nos-pai">Sobre nós</a>
+                <a href="#imagem-contatos">Contatos</a>
+            </ul>
+        </nav> 
+    </header>
+    <section>
+        <div class="imagem">
+            <img class= "maos" src="img/maos-criancas.png" alt="">
+            <div id="triangulo-amarelo">
+                <div id="triangulo-azul"></div>
+            </div>
+        </div>
+        <div>
+            <h1 class="autismo">O que é o autismo?</h1>
+            <h2 id="texto">O Transtorno do Espectro do Autismo (TEA) se caracteriza pela dificuldade na
+                comunicação social e comportamento repetitivos. Não há só um, mas muitos subtipos
+                do transtorno. Os casos variam do nível de intensidade, podendo ser visíveis desde
+                o nascimento da criança ou podem ser mais sutis, com adultos desconhecendo que 
+                possuem o transtorno pois não possuem um diagnóstico.</h2>
+
+            <img class="balao" src="./img/balao.png" alt="">
+        </div>
+        <div id="botoes">
+            <button id="caracteristicas" onclick="caracteristicas()" >Características</button>
+            <button id="caracteristicas" onclick="diagnosticos()" >Diagnósticos</button>
+            <button id="caracteristicas" onclick="tratamentos()">Tratamentos</button>
+        </div>
+            <div id="texto-dois-e-tres">
+                <p class="texto-dois">Uma criança no quadro do transtorno do espectro autista pode apresentar os seguintes sintomas:</p>
+                <p class="texto-tres">
+                Ausência completa de qualquer contato interpessoal, como garantir o 
+                contato visual, expressão facial e expressar os próprios sentimentos; </p>
+            <p class="texto-tres">
+                Dificuldade na comunicação, optando pelo uso repetitivo da linguagem
+                e bloqueios para começar e manter um diálogo; </p>
+            <p class="texto-tres">
+                Alterações comportamentais, como manias, apego excessivo a rotinas,
+                ações repetitivas e interesse intenso em coisas específicas.</p>
+        </div>
+    </section>
+    <section id="aplicativo">
+        <div id="triangulos-pai">
+            <div id="triangulo-rosa"></div>
+        </div>
+        <div class="texto-div">
+            <h4 class="baixar-app">Baixe nosso App</h4>
+        </div>
+    </section class="retangulos-pai" >
+        <div id="retangulo">
+            <div id="app">
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper carrossel">
+
+                        <div class="swiper-slide card">
+                            <div class="card-carrossel">
+                                <div class="imagem-card">
+                                    <img src="./img/tela-inicial.png" alt="">
+
+                                </div>
+                                <div class="imagem-card">
+                                    <img src="./img/segunda-tela.png" alt="">
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-carrossel">
+                                <div class="imagem-card">
+                                    <img src="./img/Cadastro de Responsável 1 (2).png" alt="">
+
+                                </div>
+                                <div class="imagem-card">
+                                    <img src="./img/Tela Login (1).png" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-carrossel">
+                                <div class="imagem-card">
+                                    <img src="./img/Menu Lateral do Responsável.png" alt="">
+
+                                </div>
+                                <div class="imagem-card">
+                                    <img src="./img/Edição dos perfis das crianças.png" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+     
+    </section>
+    
+
+    <section id="sobre-nos-pai">
+        <div id="sobre-nos"></div>
+            <div class="imagem-div">
+                <img id="img-sobre" src="./img/sobre-nos.png" alt="">
+            </div>
+            <div class="titulo-sobre-nos">
+                <h3>Sobre nós</h3>
+            </div>
+            <div class="quem-somos">
+                <h3 id="empresa">Quem somos?</h3>
+            </div>
+            <div id="texto-conteudo">
+                <p id="conteudo"> Somos a Tudo Bem Autismo, uma startup de tecnologia, originada em 
+                julho de 2022 e localizada na Rua Elton Silva, 905 – Centro – Jandira/SP.
+                Visamos entender as necessidades das milhares de crianças portadoras de TEA 
+                em nosso país, buscando ajuda-las da maneira mais adequada, com um software 
+                completo e uma equipe capacitada que se preocupa verdadeiramente. 
+                </p>
+            </div>
+            <div id="container-detalhes">
+                <div class="detalhes">
+                </div>
+                <div class="detalhes-dois">
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="comentarios">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="imagem-um">
+                          <img class="pessoa-um" src="./img/pessoa-um.png" >
+                    </div>
+                    <div class="nome-um">
+                        <span>Lúcia Camargo</span>
+                    </div>
+                    <div class="comentario-um">
+                        ”Agradeço a empresa por ter criado esse aplicativo. 
+                        Meu filho amou os jogos e através do app consigo observar
+                        o desenvolvimento dele.  Hoje ele consegue escovar os dentes
+                        sozinho graças ao Tudo Bem Autismo. O mundo seria melhor se 
+                        existissem pessoas como vocês, que se preocupam com o próximo.
+                        Nossas crianças agradecem pela ajuda.   ”
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imagem-um">
+                        <img class="pessoa-um" src="./img/pessoa-um.png" >
+                  </div>
+                  <div class="nome-um">
+                      <span>Isadora Oliveira</span>
+                  </div>
+                  <div class="comentario-um">
+                      ”Agradeço a empresa por ter criado esse aplicativo. 
+                      Meu filho amou os jogos e através do app consigo observar
+                      o desenvolvimento dele.  Hoje ele consegue escovar os dentes
+                      sozinho graças ao Tudo Bem Autismo. O mundo seria melhor se 
+                      existissem pessoas como vocês, que se preocupam com o próximo.
+                      Nossas crianças agradecem pela ajuda.   ”
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imagem-um">
+                        <img class="pessoa-um" src="./img/pessoa-um.png" >
+                  </div>
+                  <div class="nome-um">
+                      <span>Ana Silva</span>
+                  </div>
+                  <div class="comentario-um">
+                      ”Agradeço a empresa por ter criado esse aplicativo. 
+                      Meu filho amou os jogos e através do app consigo observar
+                      o desenvolvimento dele.  Hoje ele consegue escovar os dentes
+                      sozinho graças ao Tudo Bem Autismo. O mundo seria melhor se 
+                      existissem pessoas como vocês, que se preocupam com o próximo.
+                      Nossas crianças agradecem pela ajuda.   ”
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+        </script>
+    </section>
+
+     <section >
+        <div id="imagem-contatos">
+            <img class="img"  src="./img/criancas.png" alt="">
+            <div id="contatos">
+                <div id="redes-sociais">
+                    <span class="contatos-titulo">Nos acompanhe nas redes sociais</span>
+                    <div id="instagram">
+                        <img class="imagem-social"src="./img/instagram.png" alt="">
+                         <span class="nome-social">@tudobemautismo</span>
+                    </div> 
+                    <div id="instagram">
+                        <img class="imagem-social" src="./img/facebook.png" alt="">
+                         <span class="nome-social">Tudo Bem Autismo</span>
+                    </div>
+                    <div id="redes-de-contato"></div>    
+                    <span class="contatos-titulo">Entre em contato conosco</span>
+                    <div id="instagram">
+                        <img class="imagem-social"src="./img/email.png" alt="">
+                         <span class="nome-social">tudobemautismo@gmail.com</span>
+                    </div> 
+                    <div id="instagram">
+                        <img class="imagem-social" src="./img/telefone.png" alt="">
+                         <span class="nome-social">(11) XXXXX-XXXX</span>
+                    </div>
+                    <div class="inputs">
+                        <span>Nome:</span> 
+                        <input type="text" placeholder="Digite seu nome">
+                        <span>Email:</span> 
+                        <input type="text" placeholder="Digite seu email">
+                        <span>Envie uma mensagem:</span> 
+                        <input class="mensagem" type="text" placeholder="Digite uma mensagem">
+                    </div>
+                    <div class="enviar">
+                        <button class="enviar-botao">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        Copyright © 2022 | Tudo Bem Autismo
+    </footer>
+
+    
+</body>
+</html>
